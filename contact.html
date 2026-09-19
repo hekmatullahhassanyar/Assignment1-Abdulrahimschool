@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Abdul Rahim Shaheed High School</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>School Information</h2>
+
+        <table>
+
+            <caption>Public Information About the School</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Information</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Source</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1970</td>
+                    <td>Reported founding year</td>
+                    <td>Kabul</td>
+                    <td>Public reference</td>
+                </tr>
+
+                <tr>
+                    <td>2018</td>
+                    <td>Teachers received educational books</td>
+                    <td>Kabul</td>
+                    <td>Books for Afghanistan</td>
+                </tr>
+
+                <tr>
+                    <td>19 April 2022</td>
+                    <td>Explosions occurred at the school</td>
+                    <td>Dasht-e-Barchi</td>
+                    <td>Al Jazeera</td>
+                </tr>
+
+                <tr>
+                    <td>20 April 2022</td>
+                    <td>UN Security Council condemned the attack</td>
+                    <td>United Nations</td>
+                    <td>UN Security Council</td>
+                </tr>
+
+                <tr>
+                    <td>2026</td>
+                    <td>Public report discussed current enrollment</td>
+                    <td>Kabul</td>
+                    <td>TOLOnews</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4">Information from public sources.</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </section>
+
+
+    <section>
+        <h2>Contact Form</h2>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="name">Name:</label>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       required
+                       minlength="2">
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+                <br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel"
+                       id="phone"
+                       name="phone">
+
+                <br><br>
+
+                <label for="date">Date:</label>
+                <input type="date"
+                       id="date"
+                       name="date">
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Message</legend>
+
+                <p>Purpose:</p>
+
+                <input type="radio"
+                       id="information"
+                       name="purpose"
+                       value="information"
+                       required>
+
+                <label for="information">Information</label>
+
+                <input type="radio"
+                       id="academic"
+                       name="purpose"
+                       value="academic">
+
+                <label for="academic">Academic</label>
+
+                <br><br>
+
+                <label for="students">Number of students:</label>
+                <input type="number"
+                       id="students"
+                       name="students"
+                       min="1"
+                       max="100">
+
+                <br><br>
+
+                <label for="message">Message:</label><br>
+
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          maxlength="500"
+                          required></textarea>
+
+                <br><br>
+
+                <input type="checkbox"
+                       id="confirm"
+                       name="confirm"
+                       required>
+
+                <label for="confirm">
+                    I confirm that the information is correct.
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Abdul Rahim Shaheed High School</p>
+</footer>
+
+</body>
+</html>
